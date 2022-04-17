@@ -1,14 +1,19 @@
 import React, { useRef } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css'
 const Login = () => {
     let emailRef = useRef('');
     let passwordRef = useRef('');
     const navigate = useNavigate();
+    let location = useLocation();
+
+    let from = location.state?.from?.pathname || "/home";
 
     const [signInWithEmailAndPassword, user, loading, error,] = useSignInWithEmailAndPassword(auth);
+
+    const [signInWithGoogle, googleuser, googleloading, googleerror] = useSignInWithGoogle(auth);
 
     const loginHandle = (event) => {
         event.preventDefault();
@@ -17,9 +22,12 @@ const Login = () => {
         signInWithEmailAndPassword(emailRef, passwordRef)
     }
 
-    if (user) {
-        console.log(user)
-        navigate('/home')
+    const handleGoogleSignIn = () => {
+        signInWithGoogle();
+    }
+
+    if (user || googleuser) {
+        navigate(from, { replace: true });
     }
 
 
@@ -27,7 +35,7 @@ const Login = () => {
         <div>
             <form onSubmit={loginHandle}>
                 <div className="form-container">
-                    <h1>Login</h1>
+                    <h1 className='text-center'>LOGIN</h1>
                     <hr />
                     <input ref={emailRef} type="text" placeholder="Enter Email" name="email" id="email" required />
                     <input ref={passwordRef} type="password" placeholder="Enter Password" name="psw" id="psw" required />
@@ -36,12 +44,12 @@ const Login = () => {
                 </div>
 
                 <div className="form-container signin">
-                    <p>Create a new account?<Link to="/register"> Register </Link></p>
+                    <p>Create a new account?<Link to="/register" style={{ color: '#04AA6D', fontWeight: 'bold' }}> Register </Link></p>
                 </div>
 
             </form>
             <div className="form-container">
-                <button type="submit" className="registerbtn">Google Login</button>
+                <button onClick={handleGoogleSignIn} type="submit" className="registerbtn">Google Login</button>
             </div>
         </div>
     );

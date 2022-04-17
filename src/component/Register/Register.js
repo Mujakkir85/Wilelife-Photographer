@@ -15,9 +15,7 @@ const Register = () => {
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
-
         createUserWithEmailAndPassword(email, password);
-
         //console.log(name, email, password)
     }
 
@@ -29,7 +27,7 @@ const Register = () => {
         <div>
             <form onSubmit={handleRegister}>
                 <div className="form-container">
-                    <h1>Register</h1>
+                    <h1 className='text-center'>REGISTER</h1>
                     <p>Please fill in this form to create an account.</p>
                     <hr />
                     <input type="text" placeholder="Name" name="name" id="name" required />
@@ -39,12 +37,13 @@ const Register = () => {
                     <button type="submit" className="registerbtn">Register</button>
                 </div>
                 <div className="container signin">
-                    <p>Already have an account? <Link to="/login"> Login </Link></p>
-                </div>
-                <div className="form-container">
-                    <button type="submit" className="registerbtn">Google Login</button>
+                    <p>Already have an account? <Link to="/login" style={{ color: '#04AA6D', fontWeight: 'bold' }}> Login </Link></p>
                 </div>
             </form>
+
+            <div className="form-container">
+                <button type="submit" className="registerbtn">Google Login</button>
+            </div>
 
         </div>
     );
