@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "picture": "https://img.freepik.com/free-photo/closeup-shot-two-zebras-cuddling_181624-5940.jpg?t=st=1650187839~exp=1650188439~hmac=01b8d8f0b910ab70836c67305067dbbd81df6d52fca69e0fdd238ea74e2686a0&w=996",
+        "price": 2000,
+        "name": "Documentary Photography",
+        "description": "Documentary photographers aim to capture authentic images to document a particular event, environmental issue, or location. For example, documentary wildlife photographers may focus on the impact of commercial hunting or poaching on endangered animal populations. They might also capture images of animals that are being rehabilitated or studied in nature preserves or research facilities."
+    },
+    {
+        "id": "2",
+        "picture": "https://img.freepik.com/free-photo/two-male-giraffes-sunset-kruger-np-south-africa_181624-33921.jpg?t=st=1650184280~exp=1650184880~hmac=7be7abba96ba4908d1a9d43de9e4ad31ae72b622095d9d7317d402e5e1003394&w=996",
+        "price": 2436,
+        "name": "Commercial Photography",
+        "description": "In the context of wildlife photography, a commercial photographer works to create attractive, marketable images. This may be for commercial purposes such as producing stock imagery for sale or creating postcards and other print media based on their photos. The primary goal of a commercial photographer is to provide image content that appeals to customers rather than promote conservation or raise awareness."
+    },
+    {
+        "id": "3",
+        "picture": "https://img.freepik.com/free-photo/male-lion-standing-bush-field_181624-9808.jpg?t=st=1650184212~exp=1650184812~hmac=021f90d89439c5d7287b771a2bac30f6667343674f22988747ecf03e7454a089&w=996",
+        "price": 2176,
+        "name": "Behavior Photography",
+        "description": "Behavior photography focuses on capturing the active behavior of an animal in a way that adds to our understanding of the nature of a species. Photographers working in this category attempt to document memorable, unusual, or dramatic behavior, ranging from physical confrontations and mating rituals to playful and nurturing moments. They capture impactful images that illustrate vivid motion and dynamic compositions, such as birds in flight or a leopard mid-pounce."
+    },
+    {
+        "id": "4",
+        "picture": "https://img.freepik.com/free-photo/spotted-sweetlips-fish-seabed-coral-reefs_488145-1111.jpg?size=626&ext=jpg",
+        "price": 1750,
+        "name": "Underwater Photography",
+        "description": "Underwater photography focuses on the beauty and wonder of the underwater environment, including aquatic plants and animals. A professional underwater photographer might capture images while exploring reefs and other marine life to promote awareness about conservation issues or advocate for responsible tourism. Professionals in this field use specialized equipment like waterproof cameras to capture unique images of different habitats and ecosystems."
+    },
+    {
+        "id": "5",
+        "picture": "https://img.freepik.com/free-photo/autumn-landscape-by-lake-trees-with-autumn-colors_181624-31580.jpg?t=st=1650187525~exp=1650188125~hmac=802c9662572336359f1d009846f24938011b59a0177b5126efd10bd43d0c65bb&w=996",
+        "price": 2069,
+        "name": "Conservation Photography",
+        "description": "Conservation photography often aims to promote wildlife conservation by capturing the natural beauty of wildlife in their environment. This type of photography also documents animal behavior to illustrate the importance of protecting endangered species and rare ecosystems. Conservation photographers might work alongside environmentalists or government officials, photographing animals that are threatened by environmental damage or human activity."
+    },
+    {
+        "id": "6",
+        "picture": "https://img.freepik.com/free-photo/blue-viper-snake-branch-with-black-background-viper-snake-ready-attack_488145-2126.jpg?t=st=1650187761~exp=1650188361~hmac=e859d32eca49a11fc4daee0f322c02a48c98952756d6af7b091a5ba01acd610d&w=996",
+        "price": 2475,
+        "name": "Macro Photography",
+        "description": "Macro photographers typically use specialized equipment to capture images of very small objects and organisms. The subject matter can vary significantly, but macro photographers are typically focused on capturing the beauty of nature through detailed, sharp photos that emphasize intricate patterns and textures rather than content or narrative. This type of photography is often used for scientific purposes because it allows researchers to study fine details in nature."
+    }
+]
