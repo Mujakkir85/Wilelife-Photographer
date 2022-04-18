@@ -1,4 +1,23 @@
-# Getting Started with Create React App
+# Wilelife Photographer
+
+[Wilelife Photographer](https://wildlife-photographr-7be05.web.app/) 
+
+# Feature
+* Responsive home page 
+* Show services using React bootstrap card
+* Firebase authentication use eamil and password
+* Firebase google authentication
+* Created private route for booking service
+* Email varification
+* Reset password with toast
+
+# Technology used
+* React js
+* React Bootstrap
+* React Router
+* Firebase
+* React Firebase Hooks
+* React Toastify
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
