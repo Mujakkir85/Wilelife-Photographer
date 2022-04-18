@@ -8,7 +8,7 @@ const Register = () => {
 
     const navigate = useNavigate();
 
-    const [createUserWithEmailAndPassword, user, loading, error,] = useCreateUserWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword, user, loading, error,] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
     const handleRegister = (event) => {
         event.preventDefault();
@@ -20,7 +20,7 @@ const Register = () => {
     }
 
     if (user) {
-        navigate('/home');
+        navigate('/');
     }
 
     return (

@@ -5,7 +5,7 @@ const Footer = () => {
     return (
 
         <footer className="mt-5 pt-5 pb-2 footer ">
-            <div claclassNamess="container mx-auto">
+            <div className="container mx-auto">
                 <div className="row mx-auto">
                     <div className="col-md-4 col-xs-12">
                         <h2>Abut my pession</h2>
@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
                 <div className="row mt-5">
                     <div className="col copyright">
-                        <p className="text-center"><small class="text-white-100">© 2022. All Rights Reserved.</small></p>
+                        <p className="text-center"><small className="text-white-100">© 2022. All Rights Reserved.</small></p>
                     </div>
                 </div>
             </div>

@@ -15,7 +15,7 @@ const Allservices = (props) => {
         <Card className='col gy-5 cardclass' >
             <Card.Img variant="top" src={picture} />
             <Card.Body>
-                <Card.Title>Title: {name}</Card.Title>
+                <Card.Title>Service Title: {name}</Card.Title>
                 <Card.Title>Price: ${price}</Card.Title>
                 <Card.Text>{description}</Card.Text>
                 <Button onClick={() => handleCheckout(id)} variant="primary">Book Your Service</Button>
