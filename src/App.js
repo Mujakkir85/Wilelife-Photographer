@@ -21,6 +21,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/aboutme' element={<AboutMe></AboutMe>}></Route>
+        {/* Require ath to protect private route */}
         <Route path='/servicecheckout/:id'
           element={
             <RequireAuth>

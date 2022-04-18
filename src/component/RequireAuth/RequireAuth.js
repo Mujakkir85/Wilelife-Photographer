@@ -6,8 +6,9 @@ import auth from '../../firebase.init';
 const RequireAuth = ({ children }) => {
     const [user, loading, error] = useAuthState(auth)
     let location = useLocation();
+
     if (loading) {
-        return 'Loading...'
+        return 'Loading...' //use loading to prevent reload in private route
     }
     if (!user) {
         return <Navigate to="/login" state={{ from: location }} replace />;

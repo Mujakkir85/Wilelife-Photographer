@@ -14,7 +14,7 @@ const Login = () => {
     let location = useLocation();
     let errormsg;
 
-    let from = location.state?.from?.pathname || "/";
+    let from = location.state?.from?.pathname || "/";  //find location where user was before login
 
     const [signInWithEmailAndPassword, user, loading, error,] = useSignInWithEmailAndPassword(auth);
 
@@ -41,6 +41,7 @@ const Login = () => {
         errormsg = <p className='text-center text-warning mt-3'>{error.message}Error: Email or Password is incorrect!</p>
     }
 
+    // use async wait from reset password
     const resetPassword = async () => {
         const email = emailRef.current.value
         if (email) {
@@ -48,10 +49,9 @@ const Login = () => {
             toast('Find your reset password in your email')
         }
         else {
-
+            toast('Enter your email')
         }
     }
-
 
     return (
         <div>

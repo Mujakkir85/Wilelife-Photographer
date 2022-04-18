@@ -2,7 +2,7 @@
 
 [Wilelife Photographer](https://wildlife-photographr-7be05.web.app/) 
 
-# Feature
+# Features
 * Responsive home page 
 * Show services using React bootstrap card
 * Firebase authentication use eamil and password
@@ -11,7 +11,7 @@
 * Email varification
 * Reset password with toast
 
-# Technology used
+# Technologies used
 * React js
 * React Bootstrap
 * React Router
